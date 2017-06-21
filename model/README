@@ -1,0 +1,15 @@
+- vocab
+
+contains the vocabulary as python list of strings (enables mapping word string <-> word ID)
+
+
+- embeddings.npy
+
+contains the word embeddings as numpy array
+
+
+- model
+
+contains the bidirectional LSTM model weights as python dictionary of numpy arrays
+
+
