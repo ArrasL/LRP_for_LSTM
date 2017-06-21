@@ -1,11 +1,21 @@
+
 # Description
+
 This code release contains an implementation of two relevance decomposition methods, Layer-wise Relevance Propagation (LRP) and Sensitivity Analysis (SA), for a bidirectional LSTM, as described in the paper [Explaining Recurrent Neural Network Predictions in Sentiment Analysis by L. Arras, G. Montavon, K.-R. Müller and W. Samek, 2017](https://arxiv.org/)
+
+Note that our implementation is generic and can be easily extended to unidirectional LSTMs, or to other applications than NLP.
 
 
 
 ## Dependencies
 
-Python + Numpy + Matplotlib (or simply install Anaconda)
+Python>=3.5 + Numpy + Matplotlib, or alternatively simply install Anaconda
+
+Using Anaconda you can e.g. create a Python 3.6 environment: conda create -n py36 python=3.6 anaconda
+
+Then activate it with: source activate py36
+
+Before being able to use the code, you might need to run in the terminal: export PYTHONPATH=$PYTHONPATH:$pwd
 
 
 
