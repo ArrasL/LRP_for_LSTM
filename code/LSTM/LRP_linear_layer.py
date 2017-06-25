@@ -1,3 +1,12 @@
+'''
+@author: Leila Arras
+@maintainer: Leila Arras
+@date: 21.06.2017
+@version: 1.0
+@copyright: Copyright (c) 2017, Leila Arras, Gregoire Montavon, Klaus-Robert Mueller, Wojciech Samek
+@license : BSD-2-Clause
+'''
+
 import numpy as np
 from numpy import newaxis as na
 

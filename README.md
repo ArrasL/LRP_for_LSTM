@@ -1,7 +1,7 @@
 
 # Description
 
-This code release contains an implementation of two relevance decomposition methods, Layer-wise Relevance Propagation (LRP) and Sensitivity Analysis (SA), for a bidirectional LSTM, as described in the paper [Explaining Recurrent Neural Network Predictions in Sentiment Analysis by L. Arras, G. Montavon, K.-R. Müller and W. Samek, 2017](https://arxiv.org/)
+This code release contains an implementation of two relevance decomposition methods, Layer-wise Relevance Propagation (LRP) and Sensitivity Analysis (SA), for a bidirectional LSTM, as described in the paper [Explaining Recurrent Neural Network Predictions in Sentiment Analysis by L. Arras, G. Montavon, K.-R. Müller and W. Samek, 2017](https://arxiv.org/abs/1706.07206)
 
 Note that our implementation is generic and can be easily extended to unidirectional LSTMs, or to other applications than NLP.
 
@@ -25,7 +25,7 @@ The folder model/ contains a word-based bidirectional LSTM model, that was train
 
 The folder data/ contains the test set sentences of the [Stanford Sentiment Treebank](https://nlp.stanford.edu/sentiment/index.html), preprocessed by lowercasing, as was done in [Visualizing and Understanding Neural Models in NLP by J. Li, X. Chen, E. Hovy and D. Jurafsky, 2016](https://github.com/jiweil/Visualizing-and-Understanding-Neural-Models-in-NLP)
 
-The notebook run_example.nb provides a usage example of the code, its performs LRP and SA on a test sentence.
+The notebook run_example.ipynb provides a usage example of the code, its performs LRP and SA on a test sentence.
 
 
 
@@ -46,5 +46,6 @@ The notebook run_example.nb provides a usage example of the code, its performs L
     title   = {Explaining Recurrent Neural Network Predictions in Sentiment Analysis},
     author  = {Leila Arras and Gr{\'e}goire Montavon and Klaus-Robert M{\"u}ller and Wojciech Samek},
     journal = {arXiv},
+    number  = {1706.07206},
     year    = {2017}
 }
