@@ -7,6 +7,7 @@
 @license : BSD-2-Clause
 '''
 
+
 import numpy as np
 from numpy import newaxis as na
 
