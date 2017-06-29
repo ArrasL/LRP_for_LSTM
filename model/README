@@ -12,4 +12,3 @@ contains the word embeddings as numpy array
 
 contains the bidirectional LSTM model weights as python dictionary of numpy arrays
 
-

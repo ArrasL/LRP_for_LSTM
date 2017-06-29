@@ -4,17 +4,15 @@
 @date: 21.06.2017
 @version: 1.0
 @copyright: Copyright (c) 2017, Leila Arras, Gregoire Montavon, Klaus-Robert Mueller, Wojciech Samek
-@license : BSD-2-Clause
+@license: BSD-2-Clause
 '''
 
-
 import matplotlib.pyplot as plt
-
 
 def rescale_score_by_abs (score, max_score, min_score):
     """
     rescale positive score to the range [0.5, 1.0], negative score to the range [0.0, 0.5],
-    using the extremal scores max_score  and min_score for normalization
+    using the extremal scores max_score and min_score for normalization
     """
     
     # CASE 1: positive AND negative scores occur --------------------
@@ -45,12 +43,12 @@ def rescale_score_by_abs (score, max_score, min_score):
             return 0.0
         else:
             return 0.5 - 0.5*(score/min_score)    
-
-        
+  
+      
 def getRGB (c_tuple):
     return "#%02x%02x%02x"%(int(c_tuple[0]*255), int(c_tuple[1]*255), int(c_tuple[2]*255))
- 
-    
+
+     
 def span_word (word, score, colormap):
     return "<span style=\"background-color:"+getRGB(colormap(score))+"\">"+word+"</span>"
 

@@ -4,9 +4,8 @@
 @date: 21.06.2017
 @version: 1.0
 @copyright: Copyright (c) 2017, Leila Arras, Gregoire Montavon, Klaus-Robert Mueller, Wojciech Samek
-@license : BSD-2-Clause
+@license: BSD-2-Clause
 '''
-
 
 import numpy as np
 from numpy import newaxis as na
@@ -19,10 +18,10 @@ def lrp_linear(hin, w, b, hout, Rout, bias_nb_units, eps, bias_factor, debug=Fal
     - hin:            forward pass input, of shape (D,)
     - w:              connection weights, of shape (D, M)
     - b:              biases, of shape (M,)
-    - hout:           forward pass, of shape output (M,) (unequal to np.dot(w.T,hin)+b if more than one incoming layer!)
+    - hout:           forward pass output, of shape (M,) (unequal to np.dot(w.T,hin)+b if more than one incoming layer!)
     - Rout:           relevance at layer output, of shape (M,)
     - bias_nb_units:  number of lower-layer units onto which the bias/stabilizer contribution is redistributed
-    - eps:            stabilizer 
+    - eps:            stabilizer (small positive number)
     - bias_factor:    for global relevance conservation set to 1.0, otherwise 0.0 to ignore bias redistribution
     Returns:
     - Rin:            relevance at layer input, of shape (D,)

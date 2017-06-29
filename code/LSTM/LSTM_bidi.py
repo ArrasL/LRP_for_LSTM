@@ -4,9 +4,8 @@
 @date: 21.06.2017
 @version: 1.0
 @copyright: Copyright (c) 2017, Leila Arras, Gregoire Montavon, Klaus-Robert Mueller, Wojciech Samek
-@license : BSD-2-Clause
+@license: BSD-2-Clause
 '''
-
 
 import numpy as np
 import pickle
@@ -16,7 +15,6 @@ from code.LSTM.LRP_linear_layer import *
 
 class LSTM_bidi:
     
-
     def __init__(self, model_path='./model/'):
         
         # vocabulary
@@ -48,7 +46,7 @@ class LSTM_bidi:
 
     def set_input(self, w, delete_pos=None):
         """
-        Build the numerical input x/x_rev from word sequence w (+ initialize hidden layers h, c)
+        Build the numerical input x/x_rev from word sequence indices w (+ initialize hidden layers h, c)
         Optionally delete words at positions delete_pos.
         """
         T      = len(w)                         # input word sequence length
