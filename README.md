@@ -1,7 +1,7 @@
 
 # Description
 
-This code release contains an implementation of two relevance decomposition methods, Layer-wise Relevance Propagation (LRP) and Sensitivity Analysis (SA), for a bidirectional LSTM, as described in the paper [Explaining Recurrent Neural Network Predictions in Sentiment Analysis by L. Arras, G. Montavon, K.-R. Müller and W. Samek, 2017](https://arxiv.org/abs/1706.07206)
+This code release contains an implementation of two relevance decomposition methods, Layer-wise Relevance Propagation (LRP) and Sensitivity Analysis (SA), for a bidirectional LSTM, as described in the paper [Explaining Recurrent Neural Network Predictions in Sentiment Analysis by L. Arras, G. Montavon, K.-R. Müller and W. Samek, 2017](http://aclweb.org/anthology/W/W17/W17-5221.pdf)
 
 Note that our implementation is generic and can be easily extended to unidirectional LSTMs, or to other applications than NLP.
 
@@ -9,7 +9,7 @@ Note that our implementation is generic and can be easily extended to unidirecti
 
 ## Dependencies
 
-Python>=3.5 + Numpy + Matplotlib, or alternatively simply install Anaconda
+Python>=3.5 + Numpy + Matplotlib, or alternatively simply install Anaconda.
 
 Using Anaconda you can e.g. create a Python 3.6 environment: conda create -n py36 python=3.6 anaconda
 
@@ -31,21 +31,30 @@ The notebook run_example.ipynb provides a usage example of the code, its perform
 
 ## Acknowledgments
 
-[Visualizing and Understanding Neural Models in NLP by J. Li, X. Chen, E. Hovy and D. Jurafsky, 2016](https://github.com/jiweil/Visualizing-and-Understanding-Neural-Models-in-NLP)
+[Visualizing and Understanding Neural Models in NLP by J. Li, X. Chen, E. Hovy and D. Jurafsky, 2016 code](https://github.com/jiweil/Visualizing-and-Understanding-Neural-Models-in-NLP)
 
-[Long Short Term Memory Units repo by W. Zaremba](https://github.com/wojzaremba/lstm)
+[Visualizing and Understanding Neural Models in NLP by J. Li, X. Chen, E. Hovy and D. Jurafsky, 2016 paper](http://aclweb.org/anthology/N/N16/N16-1082.pdf)
 
-[Stanford Sentiment Treebank dataset by R. Socher et al., 2013](https://nlp.stanford.edu/sentiment/index.html)
+[Long Short Term Memory Units, repo by W. Zaremba](https://github.com/wojzaremba/lstm)
+
+[Stanford Sentiment Treebank, dataset by R. Socher et al., 2013](https://nlp.stanford.edu/sentiment/index.html)
 
 
 
 ## Citation
 
-```latex
-@article{arras2017,
-    title   = {Explaining Recurrent Neural Network Predictions in Sentiment Analysis},
-    author  = {Leila Arras and Gr{\'e}goire Montavon and Klaus-Robert M{\"u}ller and Wojciech Samek},
-    journal = {arXiv},
-    number  = {1706.07206},
-    year    = {2017}
-}
+    @INPROCEEDINGS{arras2017,
+        title     = {Explaining Recurrent Neural Network Predictions in Sentiment Analysis},
+        author    = {Leila Arras and Gr{\'e}goire Montavon and Klaus-Robert M{\"u}ller and Wojciech Samek},
+        booktitle = {Proceedings of the EMNLP 2017 Workshop on Computational Approaches to Subjectivity, Sentiment and Social Media Analysis},
+        year      = {2017},
+        pages     = {159-168},
+        publisher = {Association for Computational Linguistics},
+        url       = {http://aclweb.org/anthology/W/W17/W17-5221.pdf}
+    }
+
+
+
+## More information
+
+For further research and projects involving LRP, visit [heatmapping.org](http://heatmapping.org)

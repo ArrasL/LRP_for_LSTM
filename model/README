@@ -12,3 +12,7 @@ contains the word embeddings as numpy array
 
 contains the bidirectional LSTM model weights as python dictionary of numpy arrays
 
+
+This is the model released by Li et al. 2016 (https://github.com/jiweil/Visualizing-and-Understanding-Neural-Models-in-NLP), 
+which we converted from torch to numpy format.
+
