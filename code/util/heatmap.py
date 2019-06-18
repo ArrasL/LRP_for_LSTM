@@ -2,17 +2,19 @@
 @author: Leila Arras
 @maintainer: Leila Arras
 @date: 21.06.2017
-@version: 1.0
+@version: 1.0+
 @copyright: Copyright (c) 2017, Leila Arras, Gregoire Montavon, Klaus-Robert Mueller, Wojciech Samek
-@license: BSD-2-Clause
+@license: see LICENSE file in repository root
 '''
 
 import matplotlib.pyplot as plt
 
 def rescale_score_by_abs (score, max_score, min_score):
     """
-    rescale positive score to the range [0.5, 1.0], negative score to the range [0.0, 0.5],
-    using the extremal scores max_score and min_score for normalization
+    Normalize the relevance value (=score), accordingly to the extremal relevance values (max_score and min_score), 
+    for visualization with a diverging colormap.
+    i.e. rescale positive relevance to the range [0.5, 1.0], and negative relevance to the range [0.0, 0.5],
+    using the highest absolute relevance for linear interpolation.
     """
     
     # CASE 1: positive AND negative scores occur --------------------
@@ -54,6 +56,12 @@ def span_word (word, score, colormap):
 
 
 def html_heatmap (words, scores, cmap_name="bwr"):
+    """
+    Return word-level heatmap in HTML format,
+    with words being the list of words (as string),
+    scores the corresponding list of word-level relevance values,
+    and cmap_name the name of the matplotlib diverging colormap.
+    """
     
     colormap  = plt.get_cmap(cmap_name)
      

@@ -2,9 +2,9 @@
 @author: Leila Arras
 @maintainer: Leila Arras
 @date: 21.06.2017
-@version: 1.0
+@version: 1.0+
 @copyright: Copyright (c) 2017, Leila Arras, Gregoire Montavon, Klaus-Robert Mueller, Wojciech Samek
-@license: BSD-2-Clause
+@license: see LICENSE file in repository root
 '''
 
 import numpy as np
@@ -42,7 +42,7 @@ def lrp_linear(hin, w, b, hout, Rout, bias_nb_units, eps, bias_factor=0.0, debug
     if debug:
         print("local diff: ", Rout.sum() - Rin.sum())
     # Note: 
-    # - local  layer   relevance conservation only if bias_factor==1.0 and bias_nb_units==D
+    # - local  layer   relevance conservation if bias_factor==1.0 and bias_nb_units==D (i.e. when only one incoming layer)
     # - global network relevance conservation if bias_factor==1.0 and bias_nb_units set accordingly to the total number of lower-layer connections 
     # -> can be used for sanity check
     

@@ -1,4 +1,4 @@
 - sequence_test.txt
 
-contains the Stanford Sentiment Treebank test set sentences and labels (1=very negative, 2=negative, 3=neutral, 4=positive, 5=very positive) as raw text.
+contains the Stanford Sentiment Treebank (SST) test set sentences, and their true labels (1=very negative, 2=negative, 3=neutral, 4=positive, 5=very positive), as raw text.
 

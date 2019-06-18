@@ -2,9 +2,9 @@
 @author: Leila Arras
 @maintainer: Leila Arras
 @date: 21.06.2017
-@version: 1.0
+@version: 1.0+
 @copyright: Copyright (c) 2017, Leila Arras, Gregoire Montavon, Klaus-Robert Mueller, Wojciech Samek
-@license: BSD-2-Clause
+@license: see LICENSE file in repository root
 '''
 
 import numpy as np
@@ -16,6 +16,9 @@ from code.LSTM.LRP_linear_layer import *
 class LSTM_bidi:
     
     def __init__(self, model_path='./model/'):
+        """
+        Load trained model from file.
+        """
         
         # vocabulary
         f_voc     = open(model_path + "vocab", 'rb')
@@ -46,10 +49,10 @@ class LSTM_bidi:
 
     def set_input(self, w, delete_pos=None):
         """
-        Build the numerical input x/x_rev from the word indices w (+ initialize hidden layers h, c).
+        Build the numerical input sequence x/x_rev from the word indices w (+ initialize hidden layers h, c).
         Optionally delete words at positions delete_pos.
         """
-        T      = len(w)                         # input word sequence length
+        T      = len(w)                         # sequence length
         d      = int(self.Wxh_Left.shape[0]/4)  # hidden layer dimension
         e      = self.E.shape[1]                # word embedding dimension
         x      = np.zeros((T, e))
@@ -115,7 +118,7 @@ class LSTM_bidi:
               
     def backward(self, w, sensitivity_class):
         """
-        Standard gradient backpropagation pass.
+        Standard gradient backpropagation backward pass.
         Compute the hidden layer gradients by backpropagating a gradient of 1.0 for the class sensitivity_class
         """
         # forward pass
