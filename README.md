@@ -44,7 +44,7 @@ Here are some follow-up works using LRP on various recurrent neural network mode
 
 - [*Analyzing Neuroimaging Data Through Recurrent Deep Learning Models, A.W. Thomas, H.R. Heekeren, K.-R. Müller and W. Samek* arXiv:1810.09945](https://arxiv.org/pdf/1810.09945.pdf)
 
-- [*Evaluating Recurrent Neural Network Explanations, L. Arras, A. Osman, K.-R. Müller and W. Samek* BlackboxNLP@ACL 2019 (oral)](https://blackboxnlp.github.io/program.html) [[arXiv:1904.11829](https://arxiv.org/abs/1904.11829)]
+- [*Evaluating Recurrent Neural Network Explanations, L. Arras, A. Osman, K.-R. Müller and W. Samek* BlackboxNLP@ACL 2019](https://www.aclweb.org/anthology/W19-4813) [[oral presentation slides](./misc/Talk_slides)] [[arXiv:1904.11829](https://arxiv.org/abs/1904.11829)]
 
 
 
