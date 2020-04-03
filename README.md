@@ -1,13 +1,13 @@
 
 # Description
 
-This repository provides a reference implementation of **Layer-wise Relevance Propagation (LRP)** for an LSTM, as initially proposed in the paper [*Explaining Recurrent Neural Network Predictions in Sentiment Analysis, L. Arras, G. Montavon, K.-R. Müller and W. Samek* WASSA@EMNLP'2017](https://doi.org/10.18653/v1/W17-5221) [[arXiv:1706.07206](https://arxiv.org/abs/1706.07206)].
+This repository provides a **reference** implementation of **Layer-wise Relevance Propagation (LRP)** for an LSTM, as initially proposed in the paper [*Explaining Recurrent Neural Network Predictions in Sentiment Analysis, L. Arras, G. Montavon, K.-R. Müller and W. Samek* WASSA@EMNLP'2017](https://doi.org/10.18653/v1/W17-5221) [[arXiv:1706.07206](https://arxiv.org/abs/1706.07206)].
 
 Additionally, it includes an implementation of **Sensitivity Analysis (SA)** and **GradientxInput (GI)**, i.e. of gradient-based relevances.
 
 Note that our implementation is generic and can be easily extended to unidirectional LSTMs, or to other application domains than Natural Language Processing (NLP). 
 
-A few hints on how to adapt the code to your needs can be found [here](./DOC.md).
+A few hints on how to apply and extend the code to your needs can be found [here](./DOC.md).
 
 
 
@@ -36,15 +36,17 @@ The notebook run_example.ipynb provides a usage example of the code, its perform
 
 ## Follow-up work
 
-Here are some follow-up works using LRP on various recurrent neural network models (non-exhaustive list): 
+Here are some follow-up works using LRP on various recurrent neural network models and tasks (non-exhaustive list): 
 
-- [*Evaluating Neural Network Explanation Methods using Hybrid Documents and Morphosyntactic Agreement, N. Poerner, H. Schütze and B. Roth* ACL 2018](https://www.aclweb.org/anthology/P18-1032)
+[1] [*Evaluating Neural Network Explanation Methods using Hybrid Documents and Morphosyntactic Agreement, N. Poerner, H. Schütze and B. Roth*, ACL 2018](https://www.aclweb.org/anthology/P18-1032) [[arXiv:1801.06422](https://arxiv.org/abs/1801.06422)] [[code](https://github.com/NPoe/neural-nlp-explanation-experiment/tree/master/HybridDocuments/ThirdParty/LRP_and_DeepLIFT)]
 
-- [*Explaining Therapy Predictions with Layer-Wise Relevance Propagation in Neural Networks, Y. Yang, V. Tresp, M. Wunderle and P.A. Fasching* IEEE ICHI 2018](https://doi.org/10.1109/ICHI.2018.00025) [[preprint](http://www.dbs.ifi.lmu.de/~tresp/papers/ICHI2018.pdf)]
+[2] [*Explaining Therapy Predictions with Layer-Wise Relevance Propagation in Neural Networks, Y. Yang, V. Tresp, M. Wunderle and P.A. Fasching*, IEEE ICHI 2018](https://doi.org/10.1109/ICHI.2018.00025) [[preprint](http://www.dbs.ifi.lmu.de/~tresp/papers/ICHI2018.pdf)] [[code](https://github.com/Tuyki/TT_RNN/blob/master/MNISTSeq.py)]
 
-- [*Analyzing Neuroimaging Data Through Recurrent Deep Learning Models, A.W. Thomas, H.R. Heekeren, K.-R. Müller and W. Samek* arXiv:1810.09945](https://arxiv.org/pdf/1810.09945.pdf)
+[3] [*Analyzing Neuroimaging Data Through Recurrent Deep Learning Models, A.W. Thomas, H.R. Heekeren, K.-R. Müller and W. Samek*, Frontiers in Neuroscience 2019](https://doi.org/10.3389/fnins.2019.01321) [[blog](https://www.notion.so/Analyzing-fMRI-data-with-deep-learning-models-62e0c032d0e244dab1fb077da136b214)]
 
-- [*Evaluating Recurrent Neural Network Explanations, L. Arras, A. Osman, K.-R. Müller and W. Samek* BlackboxNLP@ACL 2019](https://www.aclweb.org/anthology/W19-4813) [[oral presentation slides](./misc/Talk_slides.pdf)] [[arXiv:1904.11829](https://arxiv.org/abs/1904.11829)]
+[4] [*Evaluating Recurrent Neural Network Explanations, L. Arras, A. Osman, K.-R. Müller and W. Samek*, BlackboxNLP@ACL 2019](https://www.aclweb.org/anthology/W19-4813) [[arXiv:1904.11829](https://arxiv.org/abs/1904.11829)] [[oral presentation slides](./misc/Talk_slides.pdf)] 
+
+[5] [*Explaining and Interpreting LSTMs, L. Arras, J. Arjona-Medina, M. Widrich, G. Montavon, M. Gillhofer, K.-R. Müller, S. Hochreiter and W. Samek*, Explainable AI: Interpreting, Explaining and Visualizing Deep Learning, Springer LNCS 11700](https://doi.org/10.1007/978-3-030-28954-6_11) [[arXiv:1909.12114](https://arxiv.org/abs/1909.12114)]
 
 
 
@@ -62,6 +64,8 @@ Here are some follow-up works using LRP on various recurrent neural network mode
 
 ## Citation
 
+If you find this project useful, please cite the following paper (or one of our follow-up works [4,5]):
+
     @INPROCEEDINGS{arras2017,
         title     = {{Explaining Recurrent Neural Network Predictions in Sentiment Analysis}},
         author    = {Leila Arras and Gr{\'e}goire Montavon and Klaus-Robert M{\"u}ller and Wojciech Samek},
@@ -77,4 +81,4 @@ Here are some follow-up works using LRP on various recurrent neural network mode
 
 ## More information
 
-For further research and projects involving LRP, visit [heatmapping.org](http://heatmapping.org)
+For further research and other projects involving LRP, you can visit the website [heatmapping.org](http://heatmapping.org)
