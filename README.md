@@ -1,11 +1,11 @@
 
 # Description
 
-This repository provides a **reference** implementation of **Layer-wise Relevance Propagation (LRP)** for an LSTM, as initially proposed in the paper [*Explaining Recurrent Neural Network Predictions in Sentiment Analysis, L. Arras, G. Montavon, K.-R. Müller and W. Samek* WASSA@EMNLP'2017](https://doi.org/10.18653/v1/W17-5221) [[arXiv:1706.07206](https://arxiv.org/abs/1706.07206)].
+This repository provides a **reference** implementation of **Layer-wise Relevance Propagation (LRP) for LSTMs**, as initially proposed in the paper [*Explaining Recurrent Neural Network Predictions in Sentiment Analysis, L. Arras, G. Montavon, K.-R. Müller and W. Samek* WASSA@EMNLP'2017](https://doi.org/10.18653/v1/W17-5221) [[arXiv:1706.07206](https://arxiv.org/abs/1706.07206)].
 
-Additionally, it includes an implementation of **Sensitivity Analysis (SA)** and **GradientxInput (GI)**, i.e. of gradient-based relevances.
+Additionally it includes an implementation of **Sensitivity Analysis (SA)** and **Gradient x Input (GI)**, i.e. of gradient-based relevances.
 
-Note that our implementation is generic and can be easily extended to unidirectional LSTMs, or to other application domains than Natural Language Processing (NLP). 
+Note that our implementation is generic and can be easily extended to unidirectional LSTMs, or to other application domains than Natural Language Processing. 
 
 A few hints on how to apply and extend the code to your needs can be found [here](./DOC.md).
 
@@ -34,8 +34,9 @@ The notebook run_example.ipynb provides a usage example of the code, its perform
 
 
 
-## Follow-up work
+## Follow-up works
 
+#### Publications
 Here are some follow-up works using LRP on various recurrent neural network models and tasks (non-exhaustive list): 
 
 [1] [*Evaluating Neural Network Explanation Methods using Hybrid Documents and Morphosyntactic Agreement, N. Poerner, H. Schütze and B. Roth*, ACL 2018](https://www.aclweb.org/anthology/P18-1032) [[arXiv:1801.06422](https://arxiv.org/abs/1801.06422)] [[code](https://github.com/NPoe/neural-nlp-explanation-experiment/tree/master/HybridDocuments/ThirdParty/LRP_and_DeepLIFT)]
@@ -46,8 +47,12 @@ Here are some follow-up works using LRP on various recurrent neural network mode
 
 [4] [*Evaluating Recurrent Neural Network Explanations, L. Arras, A. Osman, K.-R. Müller and W. Samek*, BlackboxNLP@ACL 2019](https://www.aclweb.org/anthology/W19-4813) [[arXiv:1904.11829](https://arxiv.org/abs/1904.11829)] [[oral presentation slides](./misc/Talk_slides.pdf)] 
 
-[5] [*Explaining and Interpreting LSTMs, L. Arras, J. Arjona-Medina, M. Widrich, G. Montavon, M. Gillhofer, K.-R. Müller, S. Hochreiter and W. Samek*, Explainable AI: Interpreting, Explaining and Visualizing Deep Learning, Springer LNCS 11700](https://doi.org/10.1007/978-3-030-28954-6_11) [[arXiv:1909.12114](https://arxiv.org/abs/1909.12114)]
+[5] [*Explaining and Interpreting LSTMs, L. Arras, J. Arjona-Medina, M. Widrich, G. Montavon, M. Gillhofer, K.-R. Müller, S. Hochreiter and W. Samek*, Explainable AI: Interpreting, Explaining and Visualizing Deep Learning, Springer LNCS vol 11700 2019](https://doi.org/10.1007/978-3-030-28954-6_11) [[arXiv:1909.12114](https://arxiv.org/abs/1909.12114)]
 
+[6] [*Evaluating Explanation Methods for Deep Learning in Security, A. Warnecke, D. Arp, C. Wressnegger and K. Rieck*, IEEE European Symposium on Security and Privacy 2020](https://www.sec.cs.tu-bs.de/pubs/2020-eurosp.pdf) [[arXiv:1906.02108](https://arxiv.org/abs/1906.02108)] [[code_main](https://github.com/alewarne/ExplainSecurityDNNs)] [[code_lrp](https://github.com/alewarne/Layerwise-Relevance-Propagation-for-LSTMs)]
+
+#### Software
+LRP for LSTMs self-contained implementation in **Tensorflow 2.1** (allowing efficient batch and GPU processing) by Alexander Warnecke: [github repository](https://github.com/alewarne/Layerwise-Relevance-Propagation-for-LSTMs)
 
 
 ## Acknowledgments
@@ -64,7 +69,7 @@ Here are some follow-up works using LRP on various recurrent neural network mode
 
 ## Citation
 
-If you find this project useful, please cite the following paper (or one of our follow-up works [4,5]):
+If you find this project useful, please cite our original paper (or one of our follow-up publications see above [4,5]):
 
     @INPROCEEDINGS{arras2017,
         title     = {{Explaining Recurrent Neural Network Predictions in Sentiment Analysis}},
@@ -81,4 +86,4 @@ If you find this project useful, please cite the following paper (or one of our 
 
 ## More information
 
-For further research and other projects involving LRP, you can visit the website [heatmapping.org](http://heatmapping.org)
+For other research and projects involving LRP, you can visit the website [heatmapping.org](http://heatmapping.org)
